@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android">
+        <item android:drawable="@drawable/loding_00000" android:duration="50"/>
+        <item android:drawable="@drawable/loding_00001" android:duration="50"/>
+        <item android:drawable="@drawable/loding_00002" android:duration="50"/>
+        <item android:drawable="@drawable/loding_00003" android:duration="50"/>
+        <item android:drawable="@drawable/loding_00004" android:duration="50"/>
+        <item android:drawable="@drawable/loding_00005" android:duration="50"/>
+        <item android:drawable="@drawable/loding_00006" android:duration="50"/>
+        <item android:drawable="@drawable/loding_00007" android:duration="50"/>
+        <item android:drawable="@drawable/loding_00008" android:duration="50"/>
+        <item android:drawable="@drawable/loding_00009" android:duration="50"/>
+        <item android:drawable="@drawable/loding_00010" android:duration="50"/>
+        <item android:drawable="@drawable/loding_00011" android:duration="50"/>
+        <item android:drawable="@drawable/loding_00012" android:duration="50"/>
+        <item android:drawable="@drawable/loding_00013" android:duration="50"/>
+        <item android:drawable="@drawable/loding_00014" android:duration="50"/>
+        <item android:drawable="@drawable/loding_00015" android:duration="50"/>
+        <item android:drawable="@drawable/loding_00016" android:duration="50"/>
+        <item android:drawable="@drawable/loding_00017" android:duration="50"/>
+        <item android:drawable="@drawable/loding_00018" android:duration="50"/>
+        <item android:drawable="@drawable/loding_00019" android:duration="50"/>
+        <item android:drawable="@drawable/loding_00020" android:duration="50"/>
+        <item android:drawable="@drawable/loding_00021" android:duration="50"/>
+        <item android:drawable="@drawable/loding_00022" android:duration="50"/>
+        <item android:drawable="@drawable/loding_00023" android:duration="50"/>
+</animation-list>

@@ -59,6 +59,10 @@ dependencies {
     implementation Libs.Compose.composeUIPreview
     implementation Libs.Compose.composeActivity
     implementation Libs.Compose.composeViewBinding
+    implementation Libs.Compose.composeConstraintlayout
+    implementation Libs.Accompanist.composeAccompanistPage
+    implementation Libs.Accompanist.composeAccompanistCoil
+    implementation Libs.Accompanist.composeAccompanistSystemUI
     implementation Libs.Hilt.HiltAndroid
     implementation Libs.Hilt.HiltViewmodel
     implementation Libs.Androidx.livedata
@@ -66,6 +70,7 @@ dependencies {
     implementation Libs.Navigation.HiltNavigationCompose
     implementation Libs.Navigation.NavigationCompose
     implementation Libs.CommonLib.coil
+    implementation Libs.CommonLib.coilGif
     implementation Libs.Compose.composeLivedata
     implementation Libs.Kotlin.stdlib
     implementation Libs.Kotlin.reflect
@@ -75,6 +80,7 @@ dependencies {
     implementation Libs.CommonLib.gson
     implementation Libs.CommonLib.gsonFactory
     implementation Libs.Androidx.appcompat
+    implementation Libs.Androidx.material
 
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'

@@ -21,11 +21,20 @@ object Libs {
         const val composeActivity = "androidx.activity:activity-compose:1.4.0"
         const val composeLivedata = "androidx.compose.runtime:runtime-livedata:1.0.1"
         const val composeViewBinding = "androidx.compose.ui:ui-viewbinding:1.0.5"
+        const val composeConstraintlayout = "androidx.constraintlayout:constraintlayout-compose:1.0.0-rc01"
     }
 
-    object Androidx{
+    object Accompanist {
+        const val composeAccompanistPage = "com.google.accompanist:accompanist-pager:0.18.0"
+        const val composeAccompanistCoil = "com.google.accompanist:accompanist-coil:0.15.0"
+        const val composeAccompanistSystemUI = "com.google.accompanist:accompanist-systemuicontroller:0.18.0"
+    }
+
+
+    object Androidx {
         const val appcompat = "androidx.appcompat:appcompat:1.3.1"
         const val livedata = "androidx.lifecycle:lifecycle-livedata-ktx:2.3.1"
+        const val material  = "com.google.android.material:material:1.5.0"
     }
 
     object KTX {
@@ -49,8 +58,10 @@ object Libs {
     object CommonLib {
         private const val okhttp_version = "4.9.0"
         private const val retrofit_version = "2.9.0"
+        private const val coil_version = "2.0.0-rc02"
         const val okhttp = "com.squareup.okhttp3:okhttp:$okhttp_version"
-        const val coil = "io.coil-kt:coil-compose:1.3.2"
+        const val coil = "io.coil-kt:coil-compose:$coil_version"
+        const val coilGif = "io.coil-kt:coil-gif:$coil_version"
         const val okhttpInterceptor = "com.squareup.okhttp3:logging-interceptor:$okhttp_version"
         const val retrofit = "com.squareup.retrofit2:retrofit:$retrofit_version"
         const val gsonFactory = "com.squareup.retrofit2:converter-gson:$retrofit_version"

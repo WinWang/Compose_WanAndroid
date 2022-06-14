@@ -4,6 +4,7 @@ import com.winwang.composewanandroid.http.BaseResult
 import com.winwang.composewanandroid.http.ListWrapper
 import com.winwang.composewanandroid.model.ArticleBean
 import com.winwang.composewanandroid.model.BannerBean
+import com.winwang.composewanandroid.model.ParentBean
 import retrofit2.http.GET
 import retrofit2.http.Path
 
@@ -20,5 +21,9 @@ interface WanAndroidApi {
     //banner
     @GET("/banner/json")
     suspend fun getBanners(): BaseResult<MutableList<BannerBean>>
+
+    //获取分类数据
+    @GET("/tree/json")
+    suspend fun getCategoryList(): BaseResult<MutableList<ParentBean>>
 
 }

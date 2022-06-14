@@ -1,12 +1,11 @@
-package com.winwang.composewanandroid.ui.page
+package com.winwang.composewanandroid.ui.page.mine
 
 import androidx.compose.runtime.Composable
 
 /**
  * Created by WinWang on 2022/5/10
- * Description->分类页面
+ * Description->我的页面
  */
 @Composable
-fun CategoryPage() {
-
+fun MinePage() {
 }

@@ -4,6 +4,7 @@ plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
     id 'kotlin-kapt'
+    id "kotlin-parcelize"
     id 'dagger.hilt.android.plugin'
 }
 
@@ -60,6 +61,8 @@ dependencies {
     implementation Libs.Compose.composeActivity
     implementation Libs.Compose.composeViewBinding
     implementation Libs.Compose.composeConstraintlayout
+    implementation Libs.Compose.pagingCompose
+    implementation Libs.Compose.pagingRuntime
     implementation Libs.Accompanist.composeAccompanistPage
     implementation Libs.Accompanist.composeAccompanistCoil
     implementation Libs.Accompanist.composeAccompanistSystemUI

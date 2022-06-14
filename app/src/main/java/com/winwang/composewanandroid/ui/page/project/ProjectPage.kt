@@ -1,4 +1,4 @@
-package com.winwang.composewanandroid.ui.page
+package com.winwang.composewanandroid.ui.page.project
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.runtime.Composable

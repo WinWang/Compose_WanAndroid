@@ -1,15 +1,14 @@
 package com.winwang.composewanandroid.route
 
-import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
-import com.winwang.composewanandroid.ui.page.CategoryPage
-import com.winwang.composewanandroid.ui.page.HomePage
-import com.winwang.composewanandroid.ui.page.MinePage
-import com.winwang.composewanandroid.ui.page.ProjectPage
+import com.winwang.composewanandroid.ui.page.category.CategoryPage
+import com.winwang.composewanandroid.ui.page.mine.MinePage
+import com.winwang.composewanandroid.ui.page.project.ProjectPage
+import com.winwang.composewanandroid.ui.page.home.HomePage
 import com.winwang.composewanandroid.utils.AppLogUtil
 
 /**

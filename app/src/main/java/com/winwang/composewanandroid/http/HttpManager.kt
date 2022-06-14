@@ -7,6 +7,7 @@ import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
 import okhttp3.OkHttpClient
+import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import java.net.Proxy
@@ -33,6 +34,7 @@ object HttpManager {
             proxy(if (proxyStatus) null else Proxy.NO_PROXY)
             connectTimeout(30, TimeUnit.SECONDS)
             sslSocketFactory(sslSocketFactoryParams.sSLSocketFactory, sslSocketFactoryParams.trustManager)
+                .addInterceptor(HttpLoggingInterceptor().apply { level = HttpLoggingInterceptor.Level.BODY })
         }
         return RetrofitManager(
             Retrofit.Builder().client(builder.build())

@@ -64,7 +64,7 @@ open class BaseViewStateViewModel : BaseViewModel() {
     }
 
     protected fun <T, V> launchConvert(
-        liveData: ViewStateMutableLiveData<T>,
+        liveData: ViewStateMutableLiveData<T>? = null,
         isLoadMore: Boolean = false,
         partRequest: Boolean = false,
         judgeEmpty: ((V) -> Boolean)? = null,
@@ -76,7 +76,7 @@ open class BaseViewStateViewModel : BaseViewModel() {
             runCatching {
                 if (needShow) {
                     autoPages = 1
-                    liveData.value = ViewState.Loading(true)
+                    liveData?.value = ViewState.Loading(true)
                 }
                 call()
             }.onSuccess { result ->
@@ -85,20 +85,20 @@ open class BaseViewStateViewModel : BaseViewModel() {
                     if ((httpData == null || (judgeEmpty?.invoke(httpData)
                             ?: httpData is List<*> && (httpData as List<*>).isEmpty()) || result.requestSpecialEmpty())
                     ) {
-                        liveData.value = ViewState.Empty(needShow)
+                        liveData?.value = ViewState.Empty(needShow)
                     } else {
                         autoPages++
                         val v = convert.invoke(httpData)
                         if (needShow) {
-                            liveData.value = ViewState.Loading(false)
+                            liveData?.value = ViewState.Loading(false)
                         }
-                        liveData.value = ViewState.Success(v, isLoadMore)
+                        liveData?.value = ViewState.Success(v, isLoadMore)
                     }
                 } else {
-                    liveData.value = ViewState.Failed(needShow, result.httpCode(), result.httpMsg())
+                    liveData?.value = ViewState.Failed(needShow, result.httpCode(), result.httpMsg())
                 }
             }.onFailure { e ->
-                liveData.value = ViewState.Error(needShow, e)
+                liveData?.value = ViewState.Error(needShow, e)
             }
         }
     }

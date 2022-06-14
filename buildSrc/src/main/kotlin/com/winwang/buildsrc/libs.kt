@@ -22,6 +22,8 @@ object Libs {
         const val composeLivedata = "androidx.compose.runtime:runtime-livedata:1.0.1"
         const val composeViewBinding = "androidx.compose.ui:ui-viewbinding:1.0.5"
         const val composeConstraintlayout = "androidx.constraintlayout:constraintlayout-compose:1.0.0-rc01"
+        const val pagingCompose = "androidx.paging:paging-compose:1.0.0-alpha14"
+        const val pagingRuntime = "androidx.paging:paging-runtime-ktx:3.1.0-rc01"
     }
 
     object Accompanist {
@@ -34,7 +36,7 @@ object Libs {
     object Androidx {
         const val appcompat = "androidx.appcompat:appcompat:1.3.1"
         const val livedata = "androidx.lifecycle:lifecycle-livedata-ktx:2.3.1"
-        const val material  = "com.google.android.material:material:1.5.0"
+        const val material = "com.google.android.material:material:1.5.0"
     }
 
     object KTX {
